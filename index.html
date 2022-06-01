@@ -18,24 +18,25 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 	
     <script type="text/javascript">
-	
-    $(function() {
-       $("#data-bind-json-sample").DataTable({
-           data: jsonData
-           , columns: [
-                  { data: 'category'},
-                  { data: 'text'},
-                  { data: 'c1' },
-                  { data: 'c2' },
-                  { data: 'c3' },
-                  { data: 'c4' },
-                  { data: 'answer' }
-              ],
-              paging: false,
-              searching: false,
-              order: []
-       });
-    })
+	window.onload = function(){ 	
+	    $(function() {
+	       $("#data-bind-json-sample").DataTable({
+	           data: jsonData
+	           , columns: [
+	                  { data: 'category'},
+	                  { data: 'text'},
+	                  { data: 'c1' },
+	                  { data: 'c2' },
+	                  { data: 'c3' },
+	                  { data: 'c4' },
+	                  { data: 'answer' }
+	              ],
+	              paging: false,
+	              searching: false,
+	              order: []
+	       });
+	    })
+	}
     </script>
     <title>問題集</title>
 
